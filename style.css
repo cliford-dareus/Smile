@@ -1,0 +1,253 @@
+:root{
+    --clr--100: rgb(236, 236, 220);
+    --clr--200: rgb(232, 223, 62);
+    --clr--300: rgb(236, 83, 83);
+    --clr--400: rgb(167, 7, 167);
+
+}
+
+/* ====================== RESET ========================== */
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Asul', sans-serif;
+    background-color: var(--clr--100);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ========================= UTILITY ============================== */
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.card{
+    width: 70%;
+    height: 400px;
+    position: relative;
+    border-radius: 1.5em;
+    margin-bottom: 15em;
+}
+
+/* ========================= NAVBAR ============================== */
+.navbar{
+    align-items: center;
+    gap: 4em;
+}
+
+.navigation{
+    display: flex;
+    gap: 1em;
+}
+
+.nav_link{
+    margin-right: 3em;
+    color: #fff;
+}
+
+/* ========================= HERO ============================== */
+.container{
+    width: 100%;
+    height: 90vh;
+    padding: 2em 5em;
+    background: url(images/bg-1.png) no-repeat center;
+    background-color: #777;
+    background-size: cover;
+    background-position-y: 1px;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+}
+
+.hero_content{
+    width: 50%;
+    margin-top: 6em;
+}
+
+.hero_text{
+    margin-bottom: 3em;
+}
+
+.hero_text h1{
+    font-size: 4.5rem;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.hero_text span1{
+    color: var(--clr--200);
+}
+
+.hero_text span2{
+    color: var(--clr--300);
+}
+
+.hero_text span3{
+    color: var(--clr--400);
+}
+
+.hero_CTA{
+    position: relative;
+    /* display: inline-block; */
+    color: #fff;
+    padding: .8em 2em;
+    background-color: var(--clr--300);
+    border-radius: .5em;
+    margin-top: 2em;
+    z-index: 1;
+}
+
+.hero_CTA::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
+    border: 1px solid #fff;
+    z-index: -22;
+}
+
+.style{
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
+    /* width: 70px;
+    height: 20px;
+    background-color: red; */
+}
+
+.style::after{
+    content: 'Educatinal';
+    font-size: 9rem;
+    font-weight: 900;
+    color: rgba(73, 72, 72, 0.374);
+}
+
+.style_stat1{
+    position: absolute;
+    top: 8em;
+    left: 40em;
+    padding: 1em 2em;
+    color: #fff;
+    background-color: rgba(75, 72, 72, 0.353);
+}
+
+.style_stat2{
+    position: absolute;
+    top: 20em;
+    right: 10em;
+    padding: 1em 2em;
+    color: #fff;
+    background-color: rgba(75, 72, 72, 0.353);
+}
+
+/* ====================== INSTRUCTION======================= */
+.introduction{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    padding: 5em 10em;
+    place-content: center;
+}
+
+.left_side,
+.rigth_side{
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_number::before{
+    position: absolute;
+    bottom: -.3em;
+    left: .1em;
+    font-size: 20rem;
+    color: var(--clr--100);
+}
+
+.one::before{
+    content: '1';
+}
+
+.one{
+    background-color: var(--clr--200);
+}
+
+.two::before{
+    content: '2';
+}
+
+.two{
+    background-color: blue;
+}
+
+.three::before{
+    content: '3';
+}
+
+.three{
+    background-color: var(--clr--400);
+}
+
+.four::before{
+    content: '4';
+}
+
+.four{
+    background-color: var(--clr--300);
+}
+
+.card .caption{
+    position: absolute;
+    bottom: -4em;
+    left: .1em;
+}
+
+.rigth_side_title{
+    font-size: 4rem;
+    margin-bottom: 1em;
+}
+
+.dot{
+    position: absolute;
+    top: 1rem;
+    right: 1em;
+    display: flex;
+    width: 70px;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.dot >div{
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--clr--100);
+}
+
+/* ================ CATEGORY ============= */
