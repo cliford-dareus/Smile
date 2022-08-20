@@ -374,7 +374,7 @@ img{
 }
 
 .newsletter_input::after{
-    content: url(/images/handdrawn-arrows-10.svg);
+    content: url(images/handdrawn-arrows-10.svg);
     position: absolute;
     bottom: -10em;
     left: 0;
