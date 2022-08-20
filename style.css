@@ -42,10 +42,10 @@ img{
 
 .card{
     width: 70%;
-    height: 400px;
+    height: 350px;
     position: relative;
     border-radius: 1.5em;
-    margin-bottom: 15em;
+    margin-bottom: 10em;
 }
 
 /* ========================= NAVBAR ============================== */
@@ -60,6 +60,7 @@ img{
 }
 
 .nav_link{
+    font-size: .9rem;
     margin-right: 3em;
     color: #fff;
 }
@@ -67,8 +68,8 @@ img{
 /* ========================= HERO ============================== */
 .container{
     width: 100%;
-    height: 90vh;
-    padding: 2em 5em;
+    height: 100vh;
+    padding: 2em 10em;
     background: url(images/bg-1.png) no-repeat center;
     background-color: #777;
     background-size: cover;
@@ -113,7 +114,7 @@ img{
 
 .hero_CTA{
     position: relative;
-    /* display: inline-block; */
+    display: inline;
     color: #fff;
     padding: .8em 2em;
     background-color: var(--clr--300);
@@ -171,8 +172,8 @@ img{
 /* ====================== INSTRUCTION======================= */
 .introduction{
     grid-template-columns: repeat(2, 1fr);
-    gap: 5em;
-    padding: 5em 10em;
+    gap: 2em;
+    padding: 5em 15em 0 ;
     place-content: center;
 }
 
@@ -228,6 +229,14 @@ img{
     left: .1em;
 }
 
+.caption h4{
+    font-size: 1.5rem;
+}
+
+.caption p{
+    font-size: .9rem;
+}
+
 .rigth_side_title{
     font-size: 4rem;
     margin-bottom: 1em;
@@ -251,3 +260,47 @@ img{
 }
 
 /* ================ CATEGORY ============= */
+.category{
+    width: 100%;
+    padding-inline: 10em;
+    text-align: center;
+}
+
+.category_title{
+    font-size: 2rem;
+}
+
+.category_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1em auto;
+}
+
+.category_container{
+    gap: 1em;
+    width: 100%;
+}
+
+.category_card{
+    position: relative;
+    width: 33%;
+    height: 300px;
+    border-radius: 1em;
+    background-color: var(--clr--400);
+}
+
+.category_card_title{
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.category_CTA{
+    /* display: inline-block; */
+    justify-self: center;
+    align-self: center;
+}
