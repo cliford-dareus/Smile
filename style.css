@@ -48,6 +48,15 @@ img{
     margin-bottom: 10em;
 }
 
+.btn{
+    position: relative;
+    color: #fff;
+    padding: .8em 2em;
+    background-color: var(--clr--300);
+    border-radius: .5em;
+    margin-top: 2em;
+}
+
 /* ========================= NAVBAR ============================== */
 .navbar{
     align-items: center;
@@ -76,6 +85,7 @@ img{
     background-position-y: 1px;
     background-blend-mode: multiply;
     position: relative;
+    z-index: 1;
 }
 
 .hero{
@@ -113,16 +123,16 @@ img{
 }
 
 .hero_CTA{
-    position: relative;
+    /* position: relative;
     color: #fff;
     padding: .8em 2em;
     background-color: var(--clr--300);
     border-radius: .5em;
-    margin-top: 2em;
-    z-index: 1;
+    margin-top: 2em; */
+    /* z-index: 1; */
 }
 
-.hero_CTA::after{
+.hero_CTA::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -230,6 +240,7 @@ img{
 
 .caption h4{
     font-size: 1.5rem;
+    text-transform: capitalize;
 }
 
 .caption p{
@@ -304,8 +315,16 @@ img{
     align-self: center;
 }
 
-.category_CTA::after{
-    color: #777;
+.category_CTA::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
+    border: 1px solid #333;
+    z-index: -22;
 }
 
 /* ============== NEWSLETTER ============== */
@@ -326,6 +345,53 @@ img{
     bottom: -5em;
     left: 50%;
     transform: translateX(-50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 2em;
+}
+
+.newsletter_container h2{
+    font-size: 2rem;
+}
+
+.newsletter input{
+    position: relative;
+    margin-top: 2em;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* .newsletter input::placeholder */
+
+.newsletter_input{
+    position: relative;
+    /* background-color: red; */
+    width: 30%;
+}
+
+.newsletter_input::after{
+    content: url(/images/handdrawn-arrows-10.svg);
+    position: absolute;
+    bottom: -10em;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+.news_btn::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
+    border: 1px solid #333;
+    z-index: -22;
 }
 
 /* ================= FOOTER ================= */
