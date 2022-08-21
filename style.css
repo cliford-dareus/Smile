@@ -122,16 +122,6 @@ img{
     color: var(--clr--400);
 }
 
-.hero_CTA{
-    /* position: relative;
-    color: #fff;
-    padding: .8em 2em;
-    background-color: var(--clr--300);
-    border-radius: .5em;
-    margin-top: 2em; */
-    /* z-index: 1; */
-}
-
 .hero_CTA::before{
     content: '';
     position: absolute;
@@ -370,13 +360,13 @@ img{
 .newsletter_input{
     position: relative;
     /* background-color: red; */
-    width: 30%;
+    width: 40%;
 }
 
 .newsletter_input::after{
     content: url(images/handdrawn-arrows-10.svg);
     position: absolute;
-    bottom: -10em;
+    bottom: -12em;
     left: 0;
     width: 100%;
     z-index: -2;
